@@ -31,4 +31,23 @@ $(function(){
             }
     ]  //반응형 포인트 지정
       });
+      
+      //팝업버튼
+      $(function(){
+        var a = 1 
+        $('.btn_all').click(function(){
+           // $(this).toggleClass('on');
+          if(a==1) {
+               $(this).addClass('on');   
+               $('.box').fadeIn();
+               a=0; 
+          }else{
+              $(this).removeClass('on');
+              $('.box').fadeOut();
+              a=1; 
+          }
+        })
+    })
+
+
  })
